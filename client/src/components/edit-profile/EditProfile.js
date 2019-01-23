@@ -222,7 +222,7 @@ class EditProfile extends Component {
                   value={this.state.website}
                   onChange={this.onChange}
                   error={errors.website}
-                  info="Could be your own website or a company one"
+                  info="Could be your own website or a company one. Put 'http://' or 'https://'"
                 />
                 <TextFieldGroup
                   placeholder="Location"
@@ -267,9 +267,12 @@ class EditProfile extends Component {
                     }}
                     className="btn btn-light"
                   >
-                    Add Social Network Links
+                    Add Social Network Links (Optional)
                   </button>
-                  <span className="text-muted"> Optional</span>
+                  <span className="text-muted">
+                    {" "}
+                    Put 'http://' or 'https://'
+                  </span>
                 </div>
                 {socialInputs}
                 <input
